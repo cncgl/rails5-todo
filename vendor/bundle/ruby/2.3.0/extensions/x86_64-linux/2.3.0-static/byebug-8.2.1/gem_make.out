@@ -1,0 +1,19 @@
+current directory: /home/shigeru/test/rails5-angular/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+/home/shigeru/.anyenv/envs/rbenv/versions/2.3.0-preview1/bin/ruby -r ./siteconf20160110-8891-1oblzvh.rb extconf.rb
+creating Makefile
+
+current directory: /home/shigeru/test/rails5-angular/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /home/shigeru/test/rails5-angular/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR="
+compiling threads.c
+compiling context.c
+compiling byebug.c
+compiling breakpoint.c
+compiling locker.c
+linking shared-object byebug/byebug.so
+
+current directory: /home/shigeru/test/rails5-angular/vendor/bundle/ruby/2.3.0/gems/byebug-8.2.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.so ./.gem.20160110-8891-3y1cek/byebug
