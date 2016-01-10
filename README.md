@@ -1,24 +1,31 @@
-## README
+# rails5-todo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A todo application for Rails 5.0 beta on Ruby 2.3-preview1
 
-Things you may want to cover:
+## Database creation
 
-* Ruby version
+```
+$ bin/rails db:create
+```
 
-* System dependencies
+## Database initialization
 
-* Configuration
+```
+$ bin/rails db:migrate
+```
 
-* Database creation
+## Usage
 
-* Database initialization
+```
+$ bin/rails s
+```
 
-* How to run the test suite
+## How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ bin/rspec
+```
 
-* Deployment instructions
+## License
 
-* ...
+[MIT](LICENSE)
