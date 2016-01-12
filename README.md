@@ -1,5 +1,7 @@
 # rails5-todo
 
+[![Build Status](https://travis-ci.org/cncgl/rails5-todo.svg?branch=master)](https://travis-ci.org/cncgl/rails5-todo)
+
 A todo application for Rails 5.0 beta on Ruby 2.3-preview1
 
 ## Database creation
