@@ -25,10 +25,12 @@ RSpec.describe Api::TodosController, :type => :controller do
   # adjust the attributes here as well.
   let(:valid_attributes) {
     skip("Add a hash of attributes valid for your model")
+    # { status: 0, title: 'shopping' }
   }
 
   let(:invalid_attributes) {
     skip("Add a hash of attributes invalid for your model")
+    # { status: 0, title: nil }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -37,7 +39,7 @@ RSpec.describe Api::TodosController, :type => :controller do
   let(:valid_session) { {} }
 
   describe "GET index" do
-    it "assigns all todos as @todos" do
+    it 'assigns all todos as @todos' do
       todo = Todo.create! valid_attributes
       get :index, {}, valid_session
       expect(assigns(:todos)).to eq([todo])
