@@ -14,12 +14,14 @@ module Api
       render json: @todo
     end
 
-    # POST /todos
+    # POST /api/todos
     def create
       @todo = Todo.new(todo_params)
 
       if @todo.save
-        render json: @todo, status: :created, location: @todo
+        p @todo
+        # render json: @todo, status: :created, location: @todo
+        render json: @todo, status: :created, location: :api_todos
       else
         render json: @todo.errors, status: :unprocessable_entity
       end

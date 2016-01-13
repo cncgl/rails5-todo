@@ -34,8 +34,8 @@ end
 group :test do
   # gem 'rspec'
   gem 'rspec-rails', '~> 3.1.0'
-  gem 'rails-controller-testing', '~> 0.0.3'
-  # gem 'rails-controller-testing', :github => 'rails/rails-controller-testing'
+  # gem 'rails-controller-testing', '~> 0.0.3'
+  gem 'rails-controller-testing', :github => 'rails/rails-controller-testing'
   gem 'factory_girl_rails', '~> 4.5.0'
   gem 'capybara', '~> 2.5.0'
 end

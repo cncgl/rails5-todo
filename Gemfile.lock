@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/rails/rails-controller-testing.git
+  revision: 838b7e30d742cae8b3c7697f1a2970916e6b2f35
+  specs:
+    rails-controller-testing (0.0.3)
+      actionpack (>= 4.2)
+      actionview (>= 4.2)
+      activesupport (>= 4.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -140,8 +149,6 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 5.0.0.beta1)
       sprockets-rails (>= 2.0.0)
-    rails-controller-testing (0.0.3)
-      rails (>= 4.2)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
     rails-dom-testing (1.0.7)
@@ -219,7 +226,7 @@ DEPENDENCIES
   factory_girl_rails (~> 4.5.0)
   puma
   rails (>= 5.0.0.beta1, < 5.1)
-  rails-controller-testing (~> 0.0.3)
+  rails-controller-testing!
   rspec-rails (~> 3.1.0)
   sqlite3
   tzinfo-data

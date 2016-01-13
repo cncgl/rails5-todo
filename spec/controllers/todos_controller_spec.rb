@@ -19,18 +19,19 @@ require 'rails_helper'
 # that an instance is receiving a specific message.
 
 RSpec.describe Api::TodosController, :type => :controller do
+  include Rails::Controller::Testing::TestProcess
 
   # This should return the minimal set of attributes required to create a valid
   # Todo. As you add validations to Todo, be sure to
   # adjust the attributes here as well.
   let(:valid_attributes) {
-    skip("Add a hash of attributes valid for your model")
-    # { status: 0, title: 'shopping' }
+    # skip("Add a hash of attributes valid for your model")
+    { status: 0, title: 'shopping' }
   }
 
   let(:invalid_attributes) {
-    skip("Add a hash of attributes invalid for your model")
-    # { status: 0, title: nil }
+    # skip("Add a hash of attributes invalid for your model")
+    { status: 0, title: nil }
   }
 
   # This should return the minimal set of values that should be in the session
@@ -61,13 +62,13 @@ RSpec.describe Api::TodosController, :type => :controller do
   #   end
   # end
 
-  describe "GET edit" do
-    it "assigns the requested todo as @todo" do
-      todo = Todo.create! valid_attributes
-      get :edit, {:id => todo.to_param}, valid_session
-      expect(assigns(:todo)).to eq(todo)
-    end
-  end
+  # describe "GET edit" do
+  #   it "assigns the requested todo as @todo" do
+  #     todo = Todo.create! valid_attributes
+  #     get :edit, {:id => todo.to_param}, valid_session
+  #     expect(assigns(:todo)).to eq(todo)
+  #   end
+  # end
 
   describe "POST create" do
     describe "with valid params" do
@@ -83,10 +84,10 @@ RSpec.describe Api::TodosController, :type => :controller do
         expect(assigns(:todo)).to be_persisted
       end
 
-      it "redirects to the created todo" do
-        post :create, {:todo => valid_attributes}, valid_session
-        expect(response).to redirect_to(Todo.last)
-      end
+      # it "redirects to the created todo" do
+      #   post :create, {:todo => valid_attributes}, valid_session
+      #   expect(response).to redirect_to(Todo.last)
+      # end
     end
 
     describe "with invalid params" do
@@ -95,24 +96,27 @@ RSpec.describe Api::TodosController, :type => :controller do
         expect(assigns(:todo)).to be_a_new(Todo)
       end
 
-      it "re-renders the 'new' template" do
-        post :create, {:todo => invalid_attributes}, valid_session
-        expect(response).to render_template("new")
-      end
+      # it "re-renders the 'new' template" do
+      #   post :create, {:todo => invalid_attributes}, valid_session
+      #   expect(response).to render_template("new")
+      # end
     end
   end
 
   describe "PUT update" do
     describe "with valid params" do
       let(:new_attributes) {
-        skip("Add a hash of attributes valid for your model")
+        # skip("Add a hash of attributes valid for your model")
+        { status: 1, title: 'work' }
       }
 
       it "updates the requested todo" do
         todo = Todo.create! valid_attributes
         put :update, {:id => todo.to_param, :todo => new_attributes}, valid_session
         todo.reload
-        skip("Add assertions for updated state")
+        # skip("Add assertions for updated state")
+        expect(todo.status).to eq 1
+        expect(todo.title).to eq 'work'
       end
 
       it "assigns the requested todo as @todo" do
@@ -121,11 +125,11 @@ RSpec.describe Api::TodosController, :type => :controller do
         expect(assigns(:todo)).to eq(todo)
       end
 
-      it "redirects to the todo" do
-        todo = Todo.create! valid_attributes
-        put :update, {:id => todo.to_param, :todo => valid_attributes}, valid_session
-        expect(response).to redirect_to(todo)
-      end
+      # it "redirects to the todo" do
+      #   todo = Todo.create! valid_attributes
+      #   put :update, {:id => todo.to_param, :todo => valid_attributes}, valid_session
+      #  expect(response).to redirect_to(todo)
+      # end
     end
 
     describe "with invalid params" do
@@ -135,11 +139,11 @@ RSpec.describe Api::TodosController, :type => :controller do
         expect(assigns(:todo)).to eq(todo)
       end
 
-      it "re-renders the 'edit' template" do
-        todo = Todo.create! valid_attributes
-        put :update, {:id => todo.to_param, :todo => invalid_attributes}, valid_session
-        expect(response).to render_template("edit")
-      end
+      # it "re-renders the 'edit' template" do
+      #   todo = Todo.create! valid_attributes
+      #   put :update, {:id => todo.to_param, :todo => invalid_attributes}, valid_session
+      #   expect(response).to render_template("edit")
+      # end
     end
   end
 
@@ -151,11 +155,11 @@ RSpec.describe Api::TodosController, :type => :controller do
       }.to change(Todo, :count).by(-1)
     end
 
-    it "redirects to the todos list" do
-      todo = Todo.create! valid_attributes
-      delete :destroy, {:id => todo.to_param}, valid_session
-      expect(response).to redirect_to(todos_url)
-    end
+    # it "redirects to the todos list" do
+    #   todo = Todo.create! valid_attributes
+    #   delete :destroy, {:id => todo.to_param}, valid_session
+    #   expect(response).to redirect_to(todos_url)
+    # end
   end
 
 end
