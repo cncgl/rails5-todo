@@ -6,7 +6,7 @@
 [![Code Climate](https://codeclimate.com/github/cncgl/rails5-todo/badges/gpa.svg)](https://codeclimate.com/github/cncgl/rails5-todo)
 [![Issue Count](https://codeclimate.com/github/cncgl/rails5-todo/badges/issue_count.svg)](https://codeclimate.com/github/cncgl/rails5-todo)
 
-A todo application for Rails 5.0 beta on Ruby 2.3-preview1
+A todo application for Rails 5.0 beta on Ruby 2.3.0
 
 ## Database creation
 
