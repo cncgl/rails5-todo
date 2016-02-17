@@ -42,7 +42,7 @@ RSpec.describe Api::TodosController, :type => :controller do
   describe "GET index" do
     it 'assigns all todos as @todos' do
       todo = Todo.create! valid_attributes
-      get :index, {}, valid_session
+      get :index, params: {}, session: valid_session
       expect(assigns(:todos)).to eq([todo])
     end
   end
@@ -50,7 +50,7 @@ RSpec.describe Api::TodosController, :type => :controller do
   describe "GET show" do
     it "assigns the requested todo as @todo" do
       todo = Todo.create! valid_attributes
-      get :show, {:id => todo.to_param}, valid_session
+      get :show, params: { id: todo.to_param }, session: valid_session
       expect(assigns(:todo)).to eq(todo)
     end
   end
@@ -74,12 +74,12 @@ RSpec.describe Api::TodosController, :type => :controller do
     describe "with valid params" do
       it "creates a new Todo" do
         expect {
-          post :create, {:todo => valid_attributes}, valid_session
+          post :create, params: { todo: valid_attributes }, session: valid_session
         }.to change(Todo, :count).by(1)
       end
 
       it "assigns a newly created todo as @todo" do
-        post :create, {:todo => valid_attributes}, valid_session
+        post :create, params: { todo: valid_attributes }, session: valid_session
         expect(assigns(:todo)).to be_a(Todo)
         expect(assigns(:todo)).to be_persisted
       end
@@ -92,7 +92,7 @@ RSpec.describe Api::TodosController, :type => :controller do
 
     describe "with invalid params" do
       it "assigns a newly created but unsaved todo as @todo" do
-        post :create, {:todo => invalid_attributes}, valid_session
+        post :create, params: { todo: invalid_attributes }, session: valid_session
         expect(assigns(:todo)).to be_a_new(Todo)
       end
 
@@ -112,7 +112,7 @@ RSpec.describe Api::TodosController, :type => :controller do
 
       it "updates the requested todo" do
         todo = Todo.create! valid_attributes
-        put :update, {:id => todo.to_param, :todo => new_attributes}, valid_session
+        put :update, params: { id: todo.to_param, todo: new_attributes }, session: valid_session
         todo.reload
         # skip("Add assertions for updated state")
         expect(todo.status).to eq 1
@@ -121,7 +121,7 @@ RSpec.describe Api::TodosController, :type => :controller do
 
       it "assigns the requested todo as @todo" do
         todo = Todo.create! valid_attributes
-        put :update, {:id => todo.to_param, :todo => valid_attributes}, valid_session
+        put :update, params: { id: todo.to_param, todo: valid_attributes }, session: valid_session
         expect(assigns(:todo)).to eq(todo)
       end
 
@@ -135,7 +135,7 @@ RSpec.describe Api::TodosController, :type => :controller do
     describe "with invalid params" do
       it "assigns the todo as @todo" do
         todo = Todo.create! valid_attributes
-        put :update, {:id => todo.to_param, :todo => invalid_attributes}, valid_session
+        put :update, params: { id: todo.to_param, todo: invalid_attributes }, session: valid_session
         expect(assigns(:todo)).to eq(todo)
       end
 
@@ -151,7 +151,7 @@ RSpec.describe Api::TodosController, :type => :controller do
     it "destroys the requested todo" do
       todo = Todo.create! valid_attributes
       expect {
-        delete :destroy, {:id => todo.to_param}, valid_session
+        delete :destroy, params: { id: todo.to_param }, session: valid_session
       }.to change(Todo, :count).by(-1)
     end
 
