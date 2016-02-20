@@ -148,11 +148,11 @@ Lint/ShadowingOuterLocalVariable:
                  for block arguments or block local variables.
   Enabled: true
 
-Lint/SpaceBeforeFirstArg:
-  Description: >-
-                 Put a space between a method name and the first argument
-                 in a method call without parentheses.
-  Enabled: true
+#Lint/SpaceBeforeFirstArg:
+#  Description: >-
+#                 Put a space between a method name and the first argument
+#                 in a method call without parentheses.
+#  Enabled: true
 
 Lint/StringConversionInInterpolation:
   Description: 'Checks for Object#to_s usage in string interpolation.'
@@ -331,9 +331,9 @@ Rails/Date:
                   such as Date.today, Date.current etc.
   Enabled: false
 
-Rails/DefaultScope:
-  Description: 'Checks if the argument passed to default_scope is a block.'
-  Enabled: false
+#Rails/DefaultScope:
+#  Description: 'Checks if the argument passed to default_scope is a block.'
+#  Enabled: false
 
 Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
@@ -840,15 +840,15 @@ Style/OptionalArguments:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#optional-arguments'
   Enabled: false
 
-Style/ParallelAssignment:
-  Description: >-
-                  Check for simple usages of parallel assignment.
-                  It will only warn when the number of variables
-                  matches on both sides of the assignment.
-                  This also provides performance benefits
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#parallel-assignment'
-  Reference: 'https://github.com/JuanitoFatas/fast-ruby#parallel-assignment-vs-sequential-assignment-code'
-  Enabled: false
+#Style/ParallelAssignment:
+#  Description: >-
+#                  Check for simple usages of parallel assignment.
+#                  It will only warn when the number of variables
+#                  matches on both sides of the assignment.
+#                  This also provides performance benefits
+#  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#parallel-assignment'
+#  Reference: 'https://github.com/JuanitoFatas/fast-ruby#parallel-assignment-vs-sequential-assignment-code'
+#  Enabled: false
 
 Style/ParenthesesAroundCondition:
   Description: >-
@@ -947,7 +947,12 @@ Style/SingleLineMethods:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-single-line-methods'
   Enabled: false
 
-Style/SingleSpaceBeforeFirstArg:
+#Style/SingleSpaceBeforeFirstArg:
+#  Description: >-
+#                 Checks that exactly one space is used between a method name
+#                 and the first argument for method calls without parentheses.
+#  Enabled: false
+Style/SpaceBeforeFirstArg:
   Description: >-
                  Checks that exactly one space is used between a method name
                  and the first argument for method calls without parentheses.
@@ -963,9 +968,9 @@ Style/SpaceAfterComma:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
   Enabled: false
 
-Style/SpaceAfterControlKeyword:
-  Description: 'Use spaces after if/elsif/unless/while/until/case/when.'
-  Enabled: false
+#Style/SpaceAfterControlKeyword:
+#  Description: 'Use spaces after if/elsif/unless/while/until/case/when.'
+#  Enabled: false
 
 Style/SpaceAfterMethodName:
   Description: >-
@@ -1028,9 +1033,9 @@ Style/SpaceAroundOperators:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#spaces-operators'
   Enabled: false
 
-Style/SpaceBeforeModifierKeyword:
-  Description: 'Put a space before the modifier keyword.'
-  Enabled: false
+#Style/SpaceBeforeModifierKeyword:
+#  Description: 'Put a space before the modifier keyword.'
+#  Enabled: false
 
 Style/SpaceInsideBrackets:
   Description: 'No spaces after [ or before ].'
@@ -1096,10 +1101,10 @@ Style/TrailingBlankLines:
   StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#newline-eof'
   Enabled: false
 
-Style/TrailingComma:
-  Description: 'Checks for trailing comma in parameter lists and literals.'
-  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
-  Enabled: false
+#Style/TrailingComma:
+#  Description: 'Checks for trailing comma in parameter lists and literals.'
+#  StyleGuide: 'https://github.com/bbatsov/ruby-style-guide#no-trailing-array-commas'
+#  Enabled: false
 
 Style/TrailingWhitespace:
   Description: 'Avoid trailing whitespace.'

@@ -25,7 +25,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # rubocop が ruby2.3 のシンタックスに対応していない
-  # gem 'rubocop', '~> 0.35.1'
+  gem 'rubocop', '~> 0.37.2'
 end
 
 group :development do

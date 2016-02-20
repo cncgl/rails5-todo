@@ -29,7 +29,7 @@ $ bin/rails s
 ## How to run the test suite
 
 ```
-$ bin/rspec
+$ bin/rake
 ```
 
 ## License
