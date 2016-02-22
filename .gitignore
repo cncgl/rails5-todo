@@ -24,3 +24,6 @@
 /vendor/bundle
 /vendor/cache
 
+
+/typings
+/node_modules
