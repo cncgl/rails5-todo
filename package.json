@@ -1,13 +1,13 @@
 {
-  "name": "angular2-quickstart",
+  "name": "rails5-todo",
   "version": "1.0.0",
   "scripts": {
-    "postinstall": "npm run typings install",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "lite": "lite-server",
-    "start": "concurrent \"npm run tsc:w\" \"bin/rails s -b 0.0.0.0\" ",
-    "typings": "typings"
+    "start": "concurrently \"npm run tsc:w\" \"bin/rails s -b 0.0.0.0\" ",
+    "typings": "typings",
+    "postinstall": "typings install"
   },
   "license": "MIT",
   "dependencies": {
@@ -21,18 +21,22 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
-    "lite-server": "^2.1.0",
-    "typescript": "^1.8.2",
-    "typings": "^0.6.8",
-    "tslint": "^3.4.0",
     "eslint": "^2.2.0",
-    "typescript-eslint-parser": "https://github.com/eslint/typescript-eslint-parser.git"
+    "lite-server": "^2.1.0",
+    "tslint": "^3.4.0",
+    "typescript": "^1.7.5",
+    "typescript-eslint-parser": "https://github.com/eslint/typescript-eslint-parser.git",
+    "typings": "^0.6.8"
   },
   "jspm": {
     "directories": {
       "baseURL": "public"
     },
-    "dependencies": {},
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.7",
+      "es6-shim": "github:es-shims/es6-shim@^0.34.4",
+      "rxjs": "npm:rxjs@^5.0.0-beta.2"
+    },
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
     }
