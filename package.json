@@ -32,11 +32,7 @@
     "directories": {
       "baseURL": "public"
     },
-    "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-beta.7",
-      "es6-shim": "github:es-shims/es6-shim@^0.34.4",
-      "rxjs": "npm:rxjs@^5.0.0-beta.2"
-    },
+    "dependencies": {},
     "devDependencies": {
       "typescript": "npm:typescript@^1.6.2"
     }
