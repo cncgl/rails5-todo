@@ -59,6 +59,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    codeclimate-test-reporter (0.4.8)
+      simplecov (>= 0.7.1, < 1.0.0)
     concurrent-ruby (1.0.0)
     coveralls (0.8.11)
       json (~> 1.8)
@@ -181,6 +183,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara (~> 2.6.2)
+  codeclimate-test-reporter
   coveralls
   factory_girl_rails (~> 4.6.0)
   puma
