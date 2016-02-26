@@ -90,7 +90,7 @@ GEM
     parser (2.3.0.6)
       ast (~> 2.2)
     powerpack (0.1.1)
-    puma (3.0.0)
+    puma (3.0.1)
     rack (2.0.0.alpha)
       json
     rack-test (0.6.3)
