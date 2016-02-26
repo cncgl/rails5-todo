@@ -428,6 +428,8 @@
       ],
       "/home/shigeru/test/rails5-angular/config/routes.rb": [
         1,
+        null,
+        null,
         1,
         1,
         null,
@@ -521,6 +523,6 @@
         null
       ]
     },
-    "timestamp": 1455691047
+    "timestamp": 1456493146
   }
 }
