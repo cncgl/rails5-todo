@@ -35,8 +35,8 @@ group :test do
   gem 'rspec-rails', '~> 3.1.0'
   # gem 'rails-controller-testing', '~> 0.0.3'
   gem 'rails-controller-testing', :github => 'rails/rails-controller-testing'
-  gem 'factory_girl_rails', '~> 4.5.0'
-  gem 'capybara', '~> 2.5.0'
+  gem 'factory_girl_rails', '~> 4.6.0'
+  gem 'capybara', '~> 2.6.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
