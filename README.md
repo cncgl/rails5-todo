@@ -23,8 +23,9 @@ $ bin/rails db:migrate
 ## Usage
 
 ```
-$ bin/rails s
+$ bundle exec rackup -p 3000 config.ru
 ```
+visit http://localhost:3000
 
 ## How to run the test suite
 

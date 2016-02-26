@@ -6,4 +6,6 @@ require ::File.expand_path('../config/environment', __FILE__)
 Rails.application.eager_load!
 # require 'action_cable/process/logging'
 
+use Rack::Static, urls: ['/node_modules']
+
 run Rails.application
