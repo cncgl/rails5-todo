@@ -8,16 +8,13 @@
 
 A todo application for Rails 5.0 beta on Ruby 2.3.0
 
-## Database creation
+## Install
 
 ```
-$ bin/rails db:create
-```
-
-## Database initialization
-
-```
-$ bin/rails db:migrate
+$ bundle install
+$ bin/rails db:create db:migrate
+$ npm i
+$ node_modules/.bin/typings i
 ```
 
 ## Usage
