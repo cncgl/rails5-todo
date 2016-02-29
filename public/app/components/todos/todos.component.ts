@@ -7,9 +7,11 @@ const templateUrl = 'app/components/todos/todos.html';
 
 
 @Component({
-  selector: 'my-app',
+  // selector: 'my-app',
+  selector: 'todos_component',
   // moduleId: module.id,
   // template: '<h1>My First Angular 2 App</h1>'
+  inputs: ['todos'],
   templateUrl: templateUrl,
   directives: [
     CORE_DIRECTIVES
@@ -18,11 +20,9 @@ const templateUrl = 'app/components/todos/todos.html';
     TodoService
   ]
 })
-
 export class TodosComponent implements OnInit {
-  todos: Todo[];
-
-  constructor(private _todoService: TodoService) {}
+  public todos: Array<Todo> = [];
+  constructor(public _todoService: TodoService) {}
 
   ngOnInit() {
     this.getTodos();
@@ -30,8 +30,9 @@ export class TodosComponent implements OnInit {
 
   getTodos() {
     this._todoService.fetchAll()
-      .subscribe( d=> {
-        this.todos = d.results;
+      .subscribe( data => {
+        this.todos = data.results;
+        console.log(this.todos);
       });
   }
 }

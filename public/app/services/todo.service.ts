@@ -18,6 +18,7 @@ export class TodoService {
         if(r.results) {
           results = r.results.map((v: any) => new Todo(v));
         }
+        console.log(results);
         return { results: results };
       })
   }

@@ -26,6 +26,7 @@ System.register(['angular2/core', 'angular2/common', '../../services/todo.servic
             TodosComponent = (function () {
                 function TodosComponent(_todoService) {
                     this._todoService = _todoService;
+                    this.todos = [];
                 }
                 TodosComponent.prototype.ngOnInit = function () {
                     this.getTodos();
@@ -33,15 +34,18 @@ System.register(['angular2/core', 'angular2/common', '../../services/todo.servic
                 TodosComponent.prototype.getTodos = function () {
                     var _this = this;
                     this._todoService.fetchAll()
-                        .subscribe(function (d) {
-                        _this.todos = d.results;
+                        .subscribe(function (data) {
+                        _this.todos = data.results;
+                        console.log(_this.todos);
                     });
                 };
                 TodosComponent = __decorate([
                     core_1.Component({
-                        selector: 'my-app',
+                        // selector: 'my-app',
+                        selector: 'todos_component',
                         // moduleId: module.id,
                         // template: '<h1>My First Angular 2 App</h1>'
+                        inputs: ['todos'],
                         templateUrl: templateUrl,
                         directives: [
                             common_1.CORE_DIRECTIVES

@@ -36,6 +36,7 @@ System.register(['angular2/core', 'angular2/http', '../models/todo', 'rxjs/Rx'],
                         if (r.results) {
                             results = r.results.map(function (v) { return new todo_1.Todo(v); });
                         }
+                        console.log(results);
                         return { results: results };
                     });
                 };
