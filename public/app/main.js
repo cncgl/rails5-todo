@@ -1,4 +1,6 @@
-System.register(['angular2/platform/browser', './services/todo.service', 'angular2/http', 'angular2/common', 'angular2/core', 'angular2/router', './app'], function(exports_1) {
+System.register(['angular2/platform/browser', './services/todo.service', 'angular2/http', 'angular2/common', 'angular2/core', 'angular2/router', './app'], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var browser_1, todo_service_1, http_1, common_1, core_1, router_1, app_1;
     var ROUTER_PROVIDERS, APP_PROVIDERS;
     return {

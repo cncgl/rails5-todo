@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 5.0.0.beta3', '< 5.1'
+gem 'rails', '>= 5.0.0.rc2', '< 5.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -24,7 +24,7 @@ gem 'coveralls', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rubocop', '~> 0.37.2'
+  gem 'rubocop', '~> 0.41.1'
 end
 
 group :development do
@@ -35,7 +35,7 @@ group :test do
   gem 'rspec-rails', '~> 3.1.0'
   # gem 'rails-controller-testing', '~> 0.0.3'
   gem 'rails-controller-testing', :github => 'rails/rails-controller-testing'
-  gem 'factory_girl_rails', '~> 4.6.0'
+  gem 'factory_girl_rails', '~> 4.7.0'
   gem 'capybara', '~> 2.6.2'
   gem 'codeclimate-test-reporter', require: nil
 end

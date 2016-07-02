@@ -1,4 +1,6 @@
-System.register([], function(exports_1) {
+System.register([], function(exports_1, context_1) {
+    "use strict";
+    var __moduleName = context_1 && context_1.id;
     var Todo;
     return {
         setters:[],
@@ -12,7 +14,7 @@ System.register([], function(exports_1) {
                     this.updatedAt = obj && obj.updated_at || null;
                 }
                 return Todo;
-            })();
+            }());
             exports_1("Todo", Todo);
         }
     }
