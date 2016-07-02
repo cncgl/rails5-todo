@@ -27,3 +27,6 @@
 
 /typings
 /node_modules
+
+*.js
+*.map
