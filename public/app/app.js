@@ -50,9 +50,10 @@ System.register(['angular2/core', 'angular2/common', 'angular2/router', './compo
                         { path: '/', name: 'Welcome', component: welcome_component_1.WelcomeComponent },
                         { path: '/todos', name: 'Todos', component: todos_component_1.TodosComponent }
                     ]), 
-                    __metadata('design:paramtypes', [router_1.Router, router_1.Location])
+                    __metadata('design:paramtypes', [(typeof (_a = typeof router_1.Router !== 'undefined' && router_1.Router) === 'function' && _a) || Object, (typeof (_b = typeof router_1.Location !== 'undefined' && router_1.Location) === 'function' && _b) || Object])
                 ], App);
                 return App;
+                var _a, _b;
             }());
             exports_1("App", App);
         }
