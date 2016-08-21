@@ -24,7 +24,7 @@ gem 'coveralls', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'rubocop', '~> 0.41.1'
+  gem 'rubocop', '~> 0.42.0'
 end
 
 group :development do
@@ -32,11 +32,11 @@ end
 
 group :test do
   # gem 'rspec'
-  gem 'rspec-rails', '~> 3.1.0'
+  gem 'rspec-rails', '~> 3.5.1'
   # gem 'rails-controller-testing', '~> 0.0.3'
   gem 'rails-controller-testing', :github => 'rails/rails-controller-testing'
   gem 'factory_girl_rails', '~> 4.7.0'
-  gem 'capybara', '~> 2.6.2'
+  gem 'capybara', '~> 2.8.0'
   gem 'codeclimate-test-reporter', require: nil
 end
 
