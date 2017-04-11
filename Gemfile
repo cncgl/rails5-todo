@@ -37,7 +37,8 @@ group :test do
   gem 'rails-controller-testing', :github => 'rails/rails-controller-testing'
   gem 'factory_girl_rails', '~> 4.7.0'
   gem 'capybara', '~> 2.8.0'
-  gem 'codeclimate-test-reporter', require: nil
+  gem 'simplecov'
+  gem 'codeclimate-test-reporter', '~> 1.0.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

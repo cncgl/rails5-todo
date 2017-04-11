@@ -184,7 +184,7 @@ PLATFORMS
 DEPENDENCIES
   byebug
   capybara (~> 2.8.0)
-  codeclimate-test-reporter
+  codeclimate-test-reporter (~> 1.0.0)
   coveralls
   factory_girl_rails (~> 4.7.0)
   puma
@@ -192,6 +192,7 @@ DEPENDENCIES
   rails-controller-testing!
   rspec-rails (~> 3.5.1)
   rubocop (~> 0.42.0)
+  simplecov
   sqlite3
   tzinfo-data
 

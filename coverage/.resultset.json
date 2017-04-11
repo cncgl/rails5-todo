@@ -1,7 +1,7 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/home/shigeru/test/rails5-angular/spec/controllers/todos_controller_spec.rb": [
+      "/home/shigeru/test/rails5-todo/spec/controllers/todos_controller_spec.rb": [
         1,
         null,
         null,
@@ -168,7 +168,7 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/spec/rails_helper.rb": [
+      "/home/shigeru/test/rails5-todo/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -221,14 +221,14 @@
         1,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/environment.rb": [
+      "/home/shigeru/test/rails5-todo/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/shigeru/test/rails5-angular/config/application.rb": [
+      "/home/shigeru/test/rails5-todo/config/application.rb": [
         1,
         null,
         1,
@@ -271,12 +271,12 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/boot.rb": [
+      "/home/shigeru/test/rails5-todo/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/shigeru/test/rails5-angular/config/environments/test.rb": [
+      "/home/shigeru/test/rails5-todo/config/environments/test.rb": [
         1,
         null,
         null,
@@ -322,47 +322,22 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/initializers/active_record_belongs_to_required_by_default.rb": [
-        null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/home/shigeru/test/rails5-angular/config/initializers/application_controller_renderer.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/shigeru/test/rails5-angular/config/initializers/backtrace_silencers.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/shigeru/test/rails5-angular/config/initializers/callback_terminator.rb": [
+      "/home/shigeru/test/rails5-todo/config/initializers/active_record_belongs_to_required_by_default.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/shigeru/test/rails5-angular/config/initializers/cors.rb": [
+      "/home/shigeru/test/rails5-todo/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
+        null
+      ],
+      "/home/shigeru/test/rails5-todo/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -371,13 +346,14 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/initializers/filter_parameter_logging.rb": [
+      "/home/shigeru/test/rails5-todo/config/initializers/callback_terminator.rb": [
+        null,
         null,
         null,
         null,
         1
       ],
-      "/home/shigeru/test/rails5-angular/config/initializers/inflections.rb": [
+      "/home/shigeru/test/rails5-todo/config/initializers/cors.rb": [
         null,
         null,
         null,
@@ -395,13 +371,37 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/initializers/mime_types.rb": [
+      "/home/shigeru/test/rails5-todo/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/home/shigeru/test/rails5-todo/config/initializers/inflections.rb": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/initializers/wrap_parameters.rb": [
+      "/home/shigeru/test/rails5-todo/config/initializers/mime_types.rb": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/shigeru/test/rails5-todo/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -417,7 +417,7 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/spec/factories/todos.rb": [
+      "/home/shigeru/test/rails5-todo/spec/factories/todos.rb": [
         1,
         1,
         1,
@@ -426,7 +426,7 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/config/routes.rb": [
+      "/home/shigeru/test/rails5-todo/config/routes.rb": [
         1,
         null,
         null,
@@ -439,7 +439,7 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/app/controllers/api/todos_controller.rb": [
+      "/home/shigeru/test/rails5-todo/app/controllers/api/todos_controller.rb": [
         1,
         1,
         1,
@@ -496,11 +496,11 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/app/controllers/application_controller.rb": [
+      "/home/shigeru/test/rails5-todo/app/controllers/application_controller.rb": [
         1,
         null
       ],
-      "/home/shigeru/test/rails5-angular/spec/models/todo_spec.rb": [
+      "/home/shigeru/test/rails5-todo/spec/models/todo_spec.rb": [
         1,
         null,
         1,
@@ -512,17 +512,17 @@
         null,
         null
       ],
-      "/home/shigeru/test/rails5-angular/app/models/todo.rb": [
+      "/home/shigeru/test/rails5-todo/app/models/todo.rb": [
         1,
         1,
         null
       ],
-      "/home/shigeru/test/rails5-angular/app/models/application_record.rb": [
+      "/home/shigeru/test/rails5-todo/app/models/application_record.rb": [
         1,
         1,
         null
       ]
     },
-    "timestamp": 1456493146
+    "timestamp": 1491930040
   }
 }
