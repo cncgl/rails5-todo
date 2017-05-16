@@ -7,12 +7,12 @@
 [![Issue Count](https://codeclimate.com/github/cncgl/rails5-todo/badges/issue_count.svg)](https://codeclimate.com/github/cncgl/rails5-todo)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](LICENSE)
 
-A todo application for Rails 5.0 beta on Ruby 2.3.0
+A todo application for Rails 5.0 beta on Ruby 2.4.1
 
 ## Install
 
 ```
-$ bundle install
+$ bundle
 $ bin/rails db:create db:migrate
 $ npm i
 $ node_modules/.bin/typings i
