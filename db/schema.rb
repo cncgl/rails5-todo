@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 20160110142836) do
 
   create_table "todos", force: :cascade do |t|
-    t.integer  "status"
-    t.string   "title"
+    t.integer "status"
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
