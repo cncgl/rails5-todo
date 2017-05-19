@@ -5,13 +5,13 @@ source 'https://rubygems.org'
 # gem 'rails', '>= 5.0.2', '< 5.1'
 gem 'mail', '~> 2.6.6.rc1'
 
-gem 'rails', '>= 5.1'
+gem 'rails', '~> 5.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.0'
 # Use Puma as the app server
-gem 'puma'
+gem 'puma', '~> 3.7'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -31,6 +31,10 @@ group :development, :test do
 end
 
 group :development do
+  gem 'listen', '>= 3.0.5', '< 3.2'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :test do
