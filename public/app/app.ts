@@ -1,6 +1,6 @@
-import { ViewEncapsulation, Component } from 'angular2/core';
-import { CORE_DIRECTIVES } from 'angular2/common';
-import { ROUTER_DIRECTIVES, Router, RouteConfig, Location, Instruction } from 'angular2/router';
+import { ViewEncapsulation, Component } from '@angular/core';
+import { CORE_DIRECTIVES } from '@angular/common';
+import { ROUTER_DIRECTIVES, Router, RouteConfig, Location, Instruction } from '@angular/router';
 
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { TodosComponent } from './components/todos/todos.component';
