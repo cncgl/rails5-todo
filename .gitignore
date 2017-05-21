@@ -30,4 +30,5 @@
 
 npm-debug.log
 *.js
+!*.conf.js
 *.js.map
