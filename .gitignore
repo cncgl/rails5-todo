@@ -28,6 +28,12 @@
 /typings
 /node_modules
 
+/public
+!/public/404.html
+!/public/422.html
+!/public/500.html
+!/public/robots.txt
+
 npm-debug.log
 *.js
 !*.conf.js
